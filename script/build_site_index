@@ -37,7 +37,8 @@ list = Builder::XmlMarkup.new(
 
 dirs  = get_gif_dirs
 files = []
-
+# http://www.rubydoc.info/docs/rails/2.3.8/Builder/XmlMarkup
+# http://rubylearning.com/satishtalim/ruby_blocks.html
 list.ul do |builder|
   dirs.each do |dir|
     builder.li do |dir_element|
