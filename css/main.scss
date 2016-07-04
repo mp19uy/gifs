@@ -51,7 +51,7 @@ body{
 }
 
 .page-header {
-  width: 300px; height: 100%;
+  width: 400px; height: 100%;
   background-color: $navy_bg;
   position: fixed;
   left: 0; top: 0; bottom: 0;
@@ -75,29 +75,40 @@ body{
 
   .img-preview {
     width: 100%;
-    height: 170px;
+    height: 400px;
     position: relative;
     z-index: 1;
     overflow: hidden;
+
 
     @media (max-width: 600px) { height: 300px; }
     @media (max-width: 500px) { height: 250px; }
     @media (max-width: 400px) { height: 200px; }
   }
 
-  .banner-img {
+  .banner-text {
     width: 100%;
     z-index: 1;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    @include sans;
+    color: yellow;
+    letter-spacing: -.05em;
+    font-size: 1.5rem;
   }
 
   .gif-preview {
     width: 100%;
-    min-height: 100%;
+    height:auto;
     position: absolute;
     left: 0;
     top: 0;
     z-index: 2;
     display: none;
+    top: 50%;
+    transform: translateY(-50%);
 
     &[src*=".gif"] { display: block; }
 
@@ -109,7 +120,7 @@ body{
 }
 
 .gif-listing {
-  margin-left: 300px;
+  margin-left: 400px;
   padding: 20px;
   overflow: hidden;
 
